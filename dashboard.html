@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mx-auto p-4">
+        <div class="flex flex-col md:flex-row gap-4">
+            <div class="w-full md:w-[70%] bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl md:text-2xl font-semibold mb-4">Sales Overview</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+                    <div class="border-r-2 pr-4">
+                        <svg class="bg-blue-200 rounded mx-auto mb-3" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#5985E1">
+                            <path
+                                d="M280-640q-33 0-56.5-23.5T200-720v-80q0-33 23.5-56.5T280-880h400q33 0 56.5 23.5T760-800v80q0 33-23.5 56.5T680-640H280Zm0-80h400v-80H280v80ZM160-80q-33 0-56.5-23.5T80-160v-40h800v40q0 33-23.5 56.5T800-80H160ZM80-240l139-313q10-22 30-34.5t43-12.5h376q23 0 43 12.5t30 34.5l139 313H80Zm260-80h40q8 0 14-6t6-14q0-8-6-14t-14-6h-40q-8 0-14 6t-6 14q0 8 6 14t14 6Zm0-80h40q8 0 14-6t6-14q0-8-6-14t-14-6h-40q-8 0-14 6t-6 14q0 8 6 14t14 6Zm0-80h40q8 0 14-6t6-14q0-8-6-14t-14-6h-40q-8 0-14 6t-6 14q0 8 6 14t14 6Zm120 160h40q8 0 14-6t6-14q0-8-6-14t-14-6h-40q-8 0-14 6t-6 14q0 8 6 14t14 6Zm0-80h40q8 0 14-6t6-14q0-8-6-14t-14-6h-40q-8 0-14 6t-6 14q0 8 6 14t14 6Zm0-80h40q8 0 14-6t6-14q0-8-6-14t-14-6h-40q-8 0-14 6t-6 14q0 8 6 14t14 6Zm120 160h40q8 0 14-6t6-14q0-8-6-14t-14-6h-40q-8 0-14 6t-6 14q0 8 6 14t14 6Zm0-80h40q8 0 14-6t6-14q0-8-6-14t-14-6h-40q-8 0-14 6t-6 14q0 8 6 14t14 6Zm0-80h40q8 0 14-6t6-14q0-8-6-14t-14-6h-40q-8 0-14 6t-6 14q0 8 6 14t14 6Z" />
+                        </svg>
+                        <div class="flex gap-10 justify-center">
+                            <h3 class="font-semibold">Rs 832</h3>
+                            <p class="text-gray-600">Sales</p>
+                        </div>
+                    </div>
+                    <div class="border-r-2 pr-4 ">
+                        <svg class="bg-purple-100 text-purple-400 rounded mx-auto mb-3"
+                            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="purple">
+                            <path
+                                d="M120-120v-80l80-80v160h-80Zm160 0v-240l80-80v320h-80Zm160 0v-320l80 81v239h-80Zm160 0v-239l80-80v319h-80Zm160 0v-400l80-80v480h-80ZM120-327v-113l280-280 160 160 280-280v113L560-447 400-607 120-327Z" />
+                        </svg>
+                        <div class="flex gap-10 justify-center">
+                            <h3 class="font-semibold text-1xl">Rs 18,300</h3>
+                            <p class="text-gray-600 font-medium">Revenue</p>
+                        </div>
+                    </div>
+
+                    <div class="border-r-2 pr-4">
+                        <svg class="bg-orange-100 text-orange-400 rounded mx-auto mb-3"
+                            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="orange">
+                            <path
+                                d="M336-120q-91 0-153.5-62.5T120-336q0-38 13-74t37-65l142-171-97-194h530l-97 194 142 171q24 29 37 65t13 74q0 91-63 153.5T624-120H336Zm144-200q-33 0-56.5-23.5T400-400q0-33 23.5-56.5T480-480q33 0 56.5 23.5T560-400q0 33-23.5 56.5T480-320Zm-95-360h190l40-80H345l40 80Zm-49 480h288q57 0 96.5-39.5T760-336q0-24-8.5-46.5T728-423L581-600H380L232-424q-15 18-23.5 41t-8.5 47q0 57 39.5 96.5T336-200Z" />
+                        </svg>
+                        <div class="flex gap-10 justify-center">
+                            <h3 class="font-semibold text-1xl">Rs 868</h3>
+                            <p class="text-gray-600 font-medium">Profit</p>
+                        </div>
+                    </div>
+
+                    <div class="pr-4">
+                        <svg class="bg-green-100 rounded mx-auto mb-3" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#75FB4C">
+                            <path
+                                d="M480-510ZM160-160v-375l-72 55-47-63 439-337 440 336-48 64-392-300-240 184v356h120v80H160Zm437 80L428-250l56-57 113 113 227-226 56 57L597-80Z" />
+                        </svg>
+                        <div class="flex gap-10 justify-center">
+                            <h3 class="font-semibold text-1xl">Rs 17,432</h3>
+                            <p class="text-gray-600 font-medium">Cost</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w-full md:w-[30%] bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl md:text-2xl font-semibold mb-4">Inventory Summary</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="text-center">
+                        <svg class="bg-orange-300 mx-auto mb-3 rounded" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#F19E39">
+                            <path
+                                d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z" />
+                        </svg>
+                        <h3 class="font-semibold font-medium text-[1xl]">868</h3>
+                        <p class="text-gray-600 font-medium ">Quantity in Hand</p>
+                    </div>
+                    <div class="pb-[0.25rem] pr-5 text-center">
+                        <svg class="rounded bg-purple-100 mx-auto mb-3" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#c084fc">
+                            <path
+                                d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                        </svg>
+                        <h3 class="font-semibold font-medium text-[1xl]">200</h3>
+                        <p class="text-gray-600 font-medium ">to be received</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-4 mt-5">
+            <div class="w-full md:w-[70%] bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-medium font-semibold">Purchase Overview</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+                    <div class="border-r-2 pr-5">
+                        <svg class="bg-blue-200 rounded mx-auto mb-3" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#5985e1">
+                            <path
+                                d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z" />
+                        </svg>
+                        <div class="flex gap-10 justify-center">
+                            <h3 class="font-semibold text-1xl">Rs 82</h3>
+                            <p class="text-gray-600 font-medium">Purchase</p>
+                        </div>
+                    </div>
+                    <div class="border-r-2 pr-5 ">
+                        <svg class="bg-green-100 rounded mx-auto mb-3" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#75FB4C">
+                            <path
+                                d="M480-510ZM160-160v-375l-72 55-47-63 439-337 440 336-48 64-392-300-240 184v356h120v80H160Zm437 80L428-250l56-57 113 113 227-226 56 57L597-80Z" />
+                        </svg>
+                        <div class="flex gap-10 justify-center">
+                            <h3 class="font-semibold text-1xl">Rs 13.573</h3>
+                            <p class="text-gray-600 font-medium">Cost</p>
+                        </div>
+                    </div>
+
+                    <div class="border-r-2 pr-5">
+                        <svg class="bg-purple-100 text-purple-400 rounded mx-auto mb-3"
+                            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="purple">
+                            <path
+                                d="M120-120v-80l80-80v160h-80Zm160 0v-240l80-80v320h-80Zm160 0v-320l80 81v239h-80Zm160 0v-239l80-80v319h-80Zm160 0v-400l80-80v480h-80ZM120-327v-113l280-280 160 160 280-280v113L560-447 400-607 120-327Z" />
+                        </svg>
+                        <div class="flex gap-10 justify-center">
+                            <h3 class="font-semibold text-1xl">5</h3>
+                            <p class="text-gray-600 font-medium">Cancel</p>
+                        </div>
+                    </div>
+
+                    <div class="pb-[0.25rem] pr-5">
+                        <svg class="bg-orange-100 text-orange-400 rounded mx-auto mb-3"
+                            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="orange">
+                            <path
+                                d="M336-120q-91 0-153.5-62.5T120-336q0-38 13-74t37-65l142-171-97-194h530l-97 194 142 171q24 29 37 65t13 74q0 91-63 153.5T624-120H336Zm144-200q-33 0-56.5-23.5T400-400q0-33 23.5-56.5T480-480q33 0 56.5 23.5T560-400q0 33-23.5 56.5T480-320Zm-95-360h190l40-80H345l40 80Zm-49 480h288q57 0 96.5-39.5T760-336q0-24-8.5-46.5T728-423L581-600H380L232-424q-15 18-23.5 41t-8.5 47q0 57 39.5 96.5T336-200Z" />
+                        </svg>
+                        <div class="flex gap-10 justify-center">
+                            <h3 class="font-semibold text-1xl">Rs 17,432</h3>
+                            <p class="text-gray-600 font-medium">Return</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w-full md:w-[30%] bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-medium font-semibold">Product Summary</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="text-center">
+                        <svg class="bg-orange-300 mx-auto mb-3 rounded" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#F19E39">
+                            <path
+                                d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z" />
+                        </svg>
+                        <h3 class="font-semibold font-medium text-[1xl]">31</h3>
+                        <p class="text-gray-600 font-medium ">Number of Suppliers</p>
+                    </div>
+                    <div class="text-center">
+                        <svg class="rounded bg-purple-200 mx-auto mb-3 " xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#c084fc">
+                            <path
+                                d="M320-280q17 0 28.5-11.5T360-320q0-17-11.5-28.5T320-360q-17 0-28.5 11.5T280-320q0 17 11.5 28.5T320-280Zm0-160q17 0 28.5-11.5T360-480q0-17-11.5-28.5T320-520q-17 0-28.5 11.5T280-480q0 17 11.5 28.5T320-440Zm0-160q17 0 28.5-11.5T360-640q0-17-11.5-28.5T320-680q-17 0-28.5 11.5T280-640q0 17 11.5 28.5T320-600Zm120 320h240v-80H440v80Zm0-160h240v-80H440v80Zm0-160h240v-80H440v80ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" />
+                        </svg>
+                        <h3 class="font-semibold font-medium text-[1xl]">21</h3>
+                        <p class="text-gray-600 font-medium">Number of categories</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-4 mt-6">
+            <div class="w-full md:w-[70%] bg-white rounded-lg shadow-md p-6">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-xl md:text-2xl font-semibold mb-4">Sales Purchase</h2>
+                    <h3
+                        class="rounded-[10px] py-2 px-3 border border-2 flex gap-5 text-gray-600 font-medium font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#B7B7B7">
+                            <path
+                                d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z" />
+                        </svg>Weekly
+                    </h3>
+                </div>
+                <div class="h-64">
+                    <canvas id="chart1"></canvas>
+                </div>
+            </div>
+            <div class="w-full md:w-[30%] bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl md:text-2xl font-semibold mb-4">Order Summary</h2>
+                <div class="h-64">
+                    <canvas id="inventoryChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-4 mt-6">
+            <div class="w-full md:w-[70%] bg-white rounded-lg shadow-md p-6">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-xl md:text-2xl font-semibold mb-4">Top Selling Stock</h2>
+                    <a href="#" class="text-blue-500">See All</a>
+                </div>
+                <div class="space-y-4">
+                    <div class="hidden md:flex justify-between items-center border-b pb-2">
+                        <h3 class="w-[25%]">Name</h3>
+                        <h3 class="w-[25%] text-center">Sold Quantity</h3>
+                        <h3 class="w-[25%] text-center">Remaining Quantity</h3>
+                        <h3 class="w-[25%] text-right">Price</h3>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-center border-b pb-2">
+                        <h3 class="w-full md:w-[25%] font-semibold">1. Surf Excel</h3>
+                        <div class="w-full md:w-[25%] text-center">
+                            <span class="md:hidden font-semibold">Sold Quantity: </span>30
+                        </div>
+                        <div class="w-full md:w-[25%] text-center">
+                            <span class="md:hidden font-semibold">Remaining Quantity: </span>12
+                        </div>
+                        <div class="w-full md:w-[25%] text-right">
+                            <span class="md:hidden font-semibold">Price: </span>Rs 100
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-center border-b pb-2">
+                        <h3 class="w-full md:w-[25%] font-semibold">2. Rin</h3>
+                        <div class="w-full md:w-[25%] text-center">
+                            <span class="md:hidden font-semibold">Sold Quantity: </span>21
+                        </div>
+                        <div class="w-full md:w-[25%] text-center">
+                            <span class="md:hidden font-semibold">Remaining Quantity: </span>15
+                        </div>
+                        <div class="w-full md:w-[25%] text-right">
+                            <span class="md:hidden font-semibold">Price: </span>Rs 207
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-center border-b pb-2">
+                        <h3 class="w-full md:w-[25%] font-semibold">3. Sandwish</h3>
+                        <div class="w-full md:w-[25%] text-center">
+                            <span class="md:hidden font-semibold">Sold Quantity: </span>19
+                        </div>
+                        <div class="w-full md:w-[25%] text-center">
+                            <span class="md:hidden font-semibold">Remaining Quantity: </span>17
+                        </div>
+                        <div class="w-full md:w-[25%] text-right">
+                            <span class="md:hidden font-semibold">Price: </span>Rs 105
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-[30%] bg-white rounded-lg shadow-md p-6">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-xl md:text-2xl font-semibold mb-4">Low Quantity Stock</h2>
+                    <a href="#" class="text-blue-500">See All</a>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.jp3kaTUKcFk31WpdqOvP2QHaHa&pid=Api&P=0&h=220"
+                            alt="" class="w-16 h-16">
+                        <div>
+                            <h3>Salt</h3>
+                            <p>Remaining Quantity: 10 Packet</p>
+                        </div>
+                        <button class="bg-red-100 text-red-800 rounded-full px-3 py-1">Low</button>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.heb.com/is/image/HEBGrocery/001865742" alt="" class="w-16 h-16">
+                        <div>
+                            <h3>Salt</h3>
+                            <p>Remaining Quantity: 10 Packet</p>
+                        </div>
+                        <button class="bg-red-100 text-red-800 rounded-full px-3 py-1">Low</button>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i5.walmartimages.com/asr/b40775b8-84f0-4371-b51e-aa8c4fb82d49_1.62d8306eeb14714457539a68f0c7ab40.jpeg"
+                            alt="" class="w-16 h-16">
+                        <div>
+                            <h3>Salt</h3>
+                            <p>Remaining Quantity: 10 Packet</p>
+                        </div>
+                        <button class="bg-red-100 text-red-800 rounded-full px-3 py-1">Low</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function createChart(chartId, data, color) {
+                const ctx = document.getElementById(chartId).getContext("2d");
+
+                new Chart(ctx, {
+                    type: "bar",
+                    data: {
+                        labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+                        datasets: [{
+                            label: "Sales",
+                            data: data,
+                            backgroundColor: color,
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: { beginAtZero: true }
+                        }
+                    }
+                });
+            }
+
+            createChart("chart1", [100, 200, 150, 250, 300], "#3498db");
+
+            createChart("chart2", [50, 180, 120, 220, 280], "#e74c3c");
+        });
+
+        const chartContainer = document.getElementById("inventoryChart").getContext("2d");
+
+        new Chart(chartContainer, {
+            type: "line",
+            data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+                datasets: [{
+                    label: "Sales",
+                    data: [1000, 2000, 3000, 4000],
+                    borderColor: "#3498db",
+                    borderWidth: 2,
+                    fill: false,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

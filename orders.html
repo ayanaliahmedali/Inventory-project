@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="container w-full p-5 bg-white rounded-[12px] m-5">
+        <h2 class="text-2xl font-medium font-semibold">Overall Orders</h2>
+        <div class="flex flex-col md:flex-row justify-between items-center mt-8 gap-4">
+            <div class="w-full md:w-1/4 text-start">
+                <h3 class="text-blue-600 font-medium font-semibold text-[20px] mb-2">Total Orders</h3>
+                <div>
+                    <h3 class="font-semibold text-1xl">37</h3>
+                    <p class="text-gray-600 font-medium">Last 7 days</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/4 text-start border-l-0 md:border-l-2 pl-0 md:pl-4">
+                <h3 class="text-yellow-600 font-medium font-semibold text-[20px] mb-2">Total Received</h3>
+                <div class="flex justify-between">
+                    <div>
+                        <h3 class="font-semibold text-1xl">32</h3>
+                        <p class="text-gray-600 font-medium">Last 7 days</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-1xl">Rs 25000</h3>
+                        <p class="text-gray-600 font-medium">Revenue</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/4 text-start border-l-0 md:border-l-2 pl-0 md:pl-4">
+                <h3 class="text-purple-600 font-medium font-semibold text-[20px] mb-2">Top Returned</h3>
+                <div class="flex justify-between">
+                    <div>
+                        <h3 class="font-semibold text-1xl">5</h3>
+                        <p class="text-gray-600 font-medium">Last 7 days</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-1xl">Rs 2500</h3>
+                        <p class="text-gray-600 font-medium">Cost</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/4 text-start border-l-0 md:border-l-2 pl-0 md:pl-4">
+                <h3 class="text-red-600 font-medium font-semibold text-[20px] mb-2">On the way</h3>
+                <div class="flex justify-between">
+                    <div>
+                        <h3 class="font-semibold text-1xl">12</h3>
+                        <p class="text-gray-600 font-medium">Ordered</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-1xl">Rs 2356</h3>
+                        <p class="text-gray-600 font-medium">Cost</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container w-full p-5 bg-white rounded-[12px] m-5">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-3">
+            <h2 class="font-medium font-semibold text-[25px]">Orders</h2>
+            <div class="flex flex-wrap gap-3 items-center">
+                <button onclick="window.location.href='new_order.html'"
+                    class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                    Add Product
+                </button>
+                <button class="text-gray-500 rounded-[8px] px-4 py-2 border border-2 flex gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#B7B7B7">
+                        <path d="M400-240v-80h160v80H400ZM240-440v-80h480v80H240ZM120-640v-80h720v80H120Z" />
+                    </svg>
+                    Filters
+                </button>
+                <button class="text-gray-500 rounded-[8px] px-4 py-2 border border-2">Download all</button>
+            </div>
+        </div>
+        <div class="w-full mt-6 overflow-x-auto">
+            <table class="w-full">
+                <thead>
+                    <tr class="text-left text-gray-500 border-b border-gray-400">
+                        <th class="px-4 py-2 font-medium">Product</th>
+                        <th class="px-4 py-2 font-medium">Order Value</th>
+                        <th class="px-4 py-2 font-medium">Quantity</th>
+                        <th class="px-4 py-2 font-medium">Order ID</th>
+                        <th class="px-4 py-2 font-medium">Expected Delivery</th>
+                        <th class="px-4 py-2 font-medium">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b border-gray-300">
+                        <td class="px-4 py-2"><a href="adding.product.html">Orryfass</a></td>
+                        <td class="px-4 py-2">Rs 4306</td>
+                        <td class="px-4 py-2">43 Packets</td>
+                        <td class="px-4 py-2">7535</td>
+                        <td class="px-4 py-2">11/12/25</td>
+                        <td class="px-4 py-2 text-orange-500 font-semibold">Delayed</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-300">
+                        <td class="px-4 py-2"><a href="#">Cranberry</a></td>
+                        <td class="px-4 py-2">Rs 2557</td>
+                        <td class="px-4 py-2">22 Packets</td>
+                        <td class="px-4 py-2">5724</td>
+                        <td class="px-4 py-2">21/12/25</td>
+                        <td class="px-4 py-2 text-blue-600 font-semibold">Confirmed</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-300">
+                        <td class="px-4 py-2"><a href="#">Levosafe</a></td>
+                        <td class="px-4 py-2">Rs 4075</td>
+                        <td class="px-4 py-2">36 Packets</td>
+                        <td class="px-4 py-2">2775</td>
+                        <td class="px-4 py-2">05/12/25</td>
+                        <td class="px-4 py-2 text-gray-500 font-semibold">Returned</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-300">
+                        <td class="px-4 py-2"><a href="#">Panadol</a></td>
+                        <td class="px-4 py-2">Rs 5052</td>
+                        <td class="px-4 py-2">14 Packets</td>
+                        <td class="px-4 py-2">2275</td>
+                        <td class="px-4 py-2">08/12/25</td>
+                        <td class="px-4 py-2 text-green-600 font-semibold">Out for delivery</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-300">
+                        <td class="px-4 py-2"><a href="#">Esomeprazole</a></td>
+                        <td class="px-4 py-2">Rs 5370</td>
+                        <td class="px-4 py-2">5 Packets</td>
+                        <td class="px-4 py-2">2427</td>
+                        <td class="px-4 py-2">09/1/25</td>
+                        <td class="px-4 py-2 text-gray-500 font-semibold">Returned</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-300">
+                        <td class="px-4 py-2"><a href="#">Sucral</a></td>
+                        <td class="px-4 py-2">Rs 6065</td>
+                        <td class="px-4 py-2">10 Packets</td>
+                        <td class="px-4 py-2">2578</td>
+                        <td class="px-4 py-2">09/1/05</td>
+                        <td class="px-4 py-2 text-green-600 font-semibold">Out for delivery</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-300">
+                        <td class="px-4 py-2"><a href="#">Sucral</a></td>
+                        <td class="px-4 py-2">Rs 4078</td>
+                        <td class="px-4 py-2">23 Packets</td>
+                        <td class="px-4 py-2">2757</td>
+                        <td class="px-4 py-2">15/12/25</td>
+                        <td class="px-4 py-2 text-orange-500 font-semibold">Delayed</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-300">
+                        <td class="px-4 py-2"><a href="#">Ponstan</a></td>
+                        <td class="px-4 py-2">Rs 3559</td>
+                        <td class="px-4 py-2">43 Packets</td>
+                        <td class="px-4 py-2">3757</td>
+                        <td class="px-4 py-2">06/06/25</td>
+                        <td class="px-4 py-2 text-blue-600 font-semibold">Confirmed</td>
+                    </tr>
+                    <tr class="bg-white">
+                        <td class="px-4 py-2"><a href="#">Countor 20mg</a></td>
+                        <td class="px-4 py-2">Rs 2055</td>
+                        <td class="px-4 py-2">41 Packets</td>
+                        <td class="px-4 py-2">2474</td>
+                        <td class="px-4 py-2">11/11/25</td>
+                        <td class="px-4 py-2 text-orange-500 font-semibold">Delayed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="flex justify-between items-center mt-4">
+            <button class="text-gray-750 font-semibold font-medium px-4 py-2 border border-gray-300 rounded-md">Previous</button>
+            <button class="text-gray-750 font-semibold font-medium px-4 py-2 border border-gray-300 rounded-md">Next</button>
+         </div>
+    </div>
+</body>
+
+</html>

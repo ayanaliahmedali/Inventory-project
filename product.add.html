@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center h-full">
+    <div class="bg-white p-6 rounded shadow-lg w-[30%]">
+        <h2 class="text-2xl font-semibold mb-4 text-start text-gray-700">New Product</h2>
+
+        <div id="drop-area" class="border-2 border-dashed border-gray-400 p-6 text-center mb-4 cursor-pointer">
+            <p class="text-gray-500">Drag Image Here <br>or <br> Browse image</p>
+            <input type="file" id="file-input" accept="image/*" class="hidden">
+            <img id="preview" class="hidden mx-auto mt-2 max-h-32 rounded">
+        </div>
+        <div class="flex justify-between gap-4">
+            <label class="block text-gray-700 font-semibold font-medium">Product Name</label>
+            <input type="text" placeholder="Enter Product Name" class="w-[250px] border p-2 mb-3 rounded">
+        </div>
+        <div class="flex justify-between gap-4">
+            <label class="block text-gray-700 font-semibold font-medium">Product ID</label>
+            <input type="text" placeholder="Enter Product ID" class="w-[250px] border p-2 mb-3 rounded">
+        </div>
+        <div class="flex justify-between gap-4">
+            <label class="block text-gray-700 font-semibold font-medium">Category</label>
+            <input type="text" placeholder="Select product category" class="w-[250px] border p-2 mb-3 rounded">
+        </div>
+        <div class="flex justify-between gap-4">
+            <label class="block text-gray-700 font-semibold font-medium">Buying Price</label>
+            <input type="text" placeholder="Enter Buying Price" class="w-[250px] border p-2 mb-3 rounded">
+        </div>
+        <div class="flex justify-between gap-4">
+            <label class="block text-gray-700 font-semibold font-medium">Quantity</label>
+            <input type="text" placeholder="Enter Quantity" class="w-[250px] border p-2 mb-3 rounded">
+        </div>
+        <div class="flex justify-between gap-4">
+            <label class="block text-gray-700 font-semibold font-medium">Unit</label>
+            <input type="text" placeholder="Enter Product Unit" class="w-[250px] border p-2 mb-3 rounded">
+        </div>
+        <div class="flex justify-between gap-4">
+            <label class="block text-gray-700 font-semibold font-medium">Expiry Date</label>
+            <input type="text" class="w-[250px] border p-2 mb-3 rounded" placeholder="Enter Expiry Date">
+        </div>
+        <div class="flex justify-between gap-4">
+            <label class="block text-gray-700 font-semibold font-medium">Threshold Value</label>
+            <input type="text" class="w-[250px] border p-2 mb-3 rounded" placeholder="Enter threshold value">
+        </div>
+        <div class="flex flex-row-reverse justify-end gap-4 mt-4">
+            <button class="bg-blue-600 text-white px-2 py-2 rounded w-[250px]">
+                Add Product
+            </button>
+
+            <button onclick="window.location.href='inventory.html'"
+                class="text-gray-500 border border-gray-400 px-2 py-2 rounded w-[250px]">
+                Discard
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>

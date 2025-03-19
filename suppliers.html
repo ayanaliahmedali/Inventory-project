@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppliers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container w-full h-full p-5 bg-white rounded-[12px] m-5">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-3">
+            <h2 class="font-medium font-semibold text-[25px]">Suppliers</h2>
+            <div class="flex flex-wrap gap-3 items-center">
+                <button onclick="window.location.href='new_supplier.html'"
+                    class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                    Add Suppliers
+                </button>
+                <button class="text-gray-500 rounded-[8px] px-4 py-2 border border-2 flex gap-3"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#B7B7B7">
+                        <path d="M400-240v-80h160v80H400ZM240-440v-80h480v80H240ZM120-640v-80h720v80H120Z" />
+                    </svg>Filters</button>
+                <button class="text-gray-500 rounded-[8px] px-4 py-2 border border-2">Download all</button>
+            </div>
+        </div>
+        <div class="w-full mt-6 overflow-x-auto">
+            <table class="w-full">
+                <thead>
+                    <tr class="text-left text-gray-500">
+                        <th class="px-4 py-2 border-b border-gray-400 font-medium">Supplier Name</th>
+                        <th class="px-4 py-2 border-b border-gray-400 font-medium">Product</th>
+                        <th class="px-4 py-2 border-b border-gray-400 font-medium">Contact Number</th>
+                        <th class="px-4 py-2 border-b border-gray-400 font-medium">Email</th>
+                        <th class="px-4 py-2 border-b border-gray-400 font-medium">Type</th>
+                        <th class="px-4 py-2 border-b border-gray-400 font-medium">On the way</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white text-gray-700 font-semibold">
+                        <td class="px-4 py-2 border-b border-gray-300">Richard Martin</td>
+                        <td class="px-4 py-2 border-b border-gray-300">Panadol</td>
+                        <td class="px-4 py-2 border-b border-gray-300">7687764556</td>
+                        <td class="px-4 py-2 border-b border-gray-300">richard@gmail.com</td>
+                        <td class="px-4 py-2 border-b border-gray-300 text-green-600">Taking Return</td>
+                        <td class="px-4 py-2 border-b border-gray-300  font-semibold">13</td>
+                    </tr>
+                    <tr class="bg-white text-gray-700 font-semibold">
+                        <td class="px-4 py-2 border-b border-gray-300">Tom Homan</td>
+                        <td class="px-4 py-2 border-b border-gray-300">Rs 257</td>
+                        <td class="px-4 py-2 border-b border-gray-300">22 Packets</td>
+                        <td class="px-4 py-2 border-b border-gray-300">tomhoman@gmail.com</td>
+                        <td class="px-4 py-2 border-b border-gray-300 text-green-600">Taking Return</td>
+                        <td class="px-4 py-2 border-b border-gray-300  font-semibold">-</td>
+                    </tr>
+                    <tr class="bg-white text-gray-700 font-semibold">
+                        <td class="px-4 py-2 border-b border-gray-300">Veandir</td>
+                        <td class="px-4 py-2 border-b border-gray-300">Esomoprazol</td>
+                        <td class="px-4 py-2 border-b border-gray-300">986754566</td>
+                        <td class="px-4 py-2 border-b border-gray-300">vendier@gmail.com</td>
+                        <td class="px-4 py-2 border-b border-gray-300 text-red-600">Not Taking Return</td>
+                        <td class="px-4 py-2 border-b border-gray-300 font-semibold">-</td>
+                    </tr>
+                    <tr class="bg-white text-gray-700 font-semibold">
+                        <td class="px-4 py-2 border-b border-gray-300">Charin</td>
+                        <td class="px-4 py-2 border-b border-gray-300">Buscopan</td>
+                        <td class="px-4 py-2 border-b border-gray-300">92675445457</td>
+                        <td class="px-4 py-2 border-b border-gray-300">charin@gmail.com</td>
+                        <td class="px-4 py-2 border-b border-gray-300 text-green-600">Taking Return</td>
+                        <td class="px-4 py-2 border-b border-gray-300  font-semibold">12</td>
+                    </tr>
+                    <tr class="bg-white text-gray-700 font-semibold">
+                        <td class="px-4 py-2 border-b border-gray-300">Hoffman</td>
+                        <td class="px-4 py-2 border-b border-gray-300">Panadol</td>
+                        <td class="px-4 py-2 border-b border-gray-300">9367546531</td>
+                        <td class="px-4 py-2 border-b border-gray-300">hoffman@gmail.com</td>
+                        <td class="px-4 py-2 border-b border-gray-300 text-green-600">Taking Return</td>
+                        <td class="px-4 py-2 border-b border-gray-300  font-semibold">-</td>
+                    </tr>
+                    <tr class="bg-white text-gray-700 font-semibold">
+                        <td class="px-4 py-2 border-b border-gray-300">Fainden Juke</td>
+                        <td class="px-4 py-2 border-b border-gray-300">Ponstan Forte</td>
+                        <td class="px-4 py-2 border-b border-gray-300">9667545982</td>
+                        <td class="px-4 py-2 border-b border-gray-300">fainden@gmail.com</td>
+                        <td class="px-4 py-2 border-b border-gray-300 text-red-600">Not Taking Return</td>
+                        <td class="px-4 py-2 border-b border-gray-300  font-semibold">9</td>
+                    </tr>
+                    <tr class="bg-white text-gray-700 font-semibold">
+                        <td class="px-4 py-2 border-b border-gray-300">Martin</td>
+                        <td class="px-4 py-2 border-b border-gray-300">Ponstan</td>
+                        <td class="px-4 py-2 border-b border-gray-300">986754457</td>
+                        <td class="px-4 py-2 border-b border-gray-300">martin@gmail.com</td>
+                        <td class="px-4 py-2 border-b border-gray-300 text-green-600">Taking Return</td>
+                        <td class="px-4 py-2 border-b border-gray-300 font-semibold">-</td>
+                    </tr>
+                    <tr class="bg-white text-gray-700 font-semibold">
+                        <td class="px-4 py-2 border-b border-gray-300">Joe Nike</td>
+                        <td class="px-4 py-2 border-b border-gray-300">Panadol</td>
+                        <td class="px-4 py-2 border-b border-gray-300">9567545769</td>
+                        <td class="px-4 py-2 border-b border-gray-300">joenike@gmail.com</td>
+                        <td class="px-4 py-2 border-b border-gray-300 text-green-600">Taking Return</td>
+                        <td class="px-4 py-2 border-b border-gray-300 font-semibold">-</td>
+                    </tr>
+                    <tr class="bg-white text-gray-700 font-semibold">
+                        <td class="px-4 py-2 border-b border-gray-300"><a href="#">Dender Luke</a></td>
+                        <td class="px-4 py-2 border-b border-gray-300">Cranberry</td>
+                        <td class="px-4 py-2 border-b border-gray-300">9667545980</td>
+                        <td class="px-4 py-2 border-b border-gray-300">dender@gmail.com</td>
+                        <td class="px-4 py-2 border-b border-gray-300"></td>
+                        <td class="px-4 py-2 border-b border-gray-300 font-semibold">7</td>
+                    </tr>
+                    <tr class="bg-white text-gray-700 font-semibold">
+                        <td class="px-4 py-2 border-b border-gray-300">Martin</td>
+                        <td class="px-4 py-2 border-b border-gray-300">Orryfass</td>
+                        <td class="px-4 py-2 border-b border-gray-300">986754457</td>
+                        <td class="px-4 py-2 border-b border-gray-300">martin@gmail.com</td>
+                        <td class="px-4 py-2 border-b border-gray-300 text-green-600">Taking Return</td>
+                        <td class="px-4 py-2 border-b border-gray-300 font-semibold">-</td>
+                    </tr>
+                    <tr class="bg-white text-gray-700 font-semibold">
+                        <td class="px-4 py-2 border-b border-gray-300">Joe Nike</td>
+                        <td class="px-4 py-2 border-b border-gray-300">Panadol</td>
+                        <td class="px-4 py-2 border-b border-gray-300">9567545769</td>
+                        <td class="px-4 py-2 border-b border-gray-300">joenike@gmail.com</td>
+                        <td class="px-4 py-2 border-b border-gray-300 text-green-600">Taking Return</td>
+                        <td class="px-4 py-2 border-b border-gray-300 font-semibold">-</td>
+                    </tr>
+                    <tr class="bg-white text-gray-700 font-semibold">
+                        <td class="px-4 py-2 border-b border-gray-300"><a href="#">Dender Luke</a></td>
+                        <td class="px-4 py-2 border-b border-gray-300">Sucral</td>
+                        <td class="px-4 py-2 border-b border-gray-300">9667545980</td>
+                        <td class="px-4 py-2 border-b border-gray-300">dender@gmail.com</td>
+                        <td class="px-4 py-2 border-b border-gray-300 text-red-600">Not Taking Return</td>
+                        <td class="px-4 py-2 border-b border-gray-300 font-semibold">7</td>
+                    </tr>
+                    <tr class="bg-white text-gray-700 font-semibold">
+                        <td class="px-4 py-2 border-b border-gray-300">Joe Nike</td>
+                        <td class="px-4 py-2 border-b border-gray-300">Esomoprazol</td>
+                        <td class="px-4 py-2 border-b border-gray-300">9567545769</td>
+                        <td class="px-4 py-2 border-b border-gray-300">joenike@gmail.com</td>
+                        <td class="px-4 py-2 border-b border-gray-300 text-green-600">Taking Return</td>
+                        <td class="px-4 py-2 border-b border-gray-300 font-semibold">-</td>
+                    </tr>
+                    <tr class="bg-white text-gray-700 font-semibold">
+                        <td class="px-4 py-2 border-b border-gray-300">Joe Nike</td>
+                        <td class="px-4 py-2 border-b border-gray-300">Levosafe</td>
+                        <td class="px-4 py-2 border-b border-gray-300">9567545769</td>
+                        <td class="px-4 py-2 border-b border-gray-300">joenike@gmail.com</td>
+                        <td class="px-4 py-2 border-b border-gray-300 text-green-600">Taking Return</td>
+                        <td class="px-4 py-2 border-b border-gray-300 font-semibold">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="flex justify-between items-center mt-4">
+            <button class="text-gray-750 font-semibold font-medium px-4 py-2 border border-gray-300 rounded-md">Previous</button>
+            <button class="text-gray-750 font-semibold font-medium px-4 py-2 border border-gray-300 rounded-md">Next</button>
+         </div>
+    </div>
+</body>
+</html>
